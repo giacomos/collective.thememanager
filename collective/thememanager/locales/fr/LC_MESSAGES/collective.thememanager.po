@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-24 15:37+0000\n"
+"POT-Creation-Date: 2011-08-01 19:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,31 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.thememanager\n"
 
-#: ./profiles/default/types/theme.xml
+#: ./profiles/default/types/collective.thememanager.theme.xml
 msgid "A proxy of a diazo theme"
 msgstr "Un thème diazo distant"
 
-#: ./profiles/default/types/theme.xml
+#: ./i18n.py:5
+msgid "A screenshot"
+msgstr ""
+
+#: ./i18n.py:7
+msgid "Author Name"
+msgstr ""
+
+#: ./i18n.py:6
+msgid "The theme archive"
+msgstr ""
+
+#: ./profiles/default/types/collective.thememanager.theme.xml
 msgid "Theme"
 msgstr "Thème"
+
+#: ./browser/themes_view.pt:11
+msgid "Themes"
+msgstr ""
+
+#: ./i18n.py:8
+msgid "Version"
+msgstr ""
+

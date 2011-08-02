@@ -428,7 +428,7 @@
                                 </td>
                                 <td>
                                     <a  target="_new"
-                                        tal:attributes="href string:${context/absolute_url}/++theme++${theme/__name__}/@@download-zip"
+                                        tal:attributes="href string:${context/absolute_url}/++theme++${theme/__name__}/@@download/zip"
                                         tal:content="string:${theme/title} (${theme/__name__})"
                                         />
                                 </td>

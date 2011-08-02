@@ -4,7 +4,7 @@ from zope import interface
 from plone.registry.interfaces import IRegistry
 
 from collective.thememanager import interfaces
-from collective.thememanager import provider
+from collective.thememanager.provider import Provider #make pylint happy
 
 class Manager(object):
     interface.implements(interfaces.IThemeManager)
@@ -24,7 +24,7 @@ class Manager(object):
         self._themeids = list(set(themeids))
         return self._themeids
 
-    def getThemeById(self,id):
+    def getThemeById(self, id):
         providers = self.getThemesProviders()
         for provider in providers:
             if id in provider.getThemeIds():
@@ -43,8 +43,8 @@ class Manager(object):
     def getThemesProviders(self):
         if not self._sourceslist:
             registry = component.getUtility(IRegistry)
-            sl = registry.records.get('collective.thememanager.sourceslist',None)
+            sl = registry.records.get('collective.thememanager.sourceslist', None)
             if sl is not None:
                 self._sourceslist = sl.value
 
-        return map(provider.Provider, self._sourceslist)
+        return map(Provider, self._sourceslist)
